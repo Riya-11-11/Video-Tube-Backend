@@ -1,0 +1,37 @@
+import connectDB from "./db/index.js";
+
+import dotenv from 'dotenv'
+dotenv.config({ path: '/custom/path/to/.env' })
+
+connectDB();
+
+
+
+
+
+
+
+// import mongoose from "mongoose";
+// import { DB_NAME } from "../constants.js";
+
+// import express from "express";
+// const app = express();
+
+// //iife
+// (async ()=>{
+//     try {
+//         await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+//         app.on("error", (error)=>{
+//             console.error("ERRR:", error);
+//             throw error //express error
+//         })
+
+//         app.listen(process.env.PORT, ()=>{
+//             console.log(`App is listening on ${process/env.PORT}`);     
+//         })
+
+//     } catch (error) {
+//         console.error("Error :", error);
+//         throw err
+//     }
+// })()
